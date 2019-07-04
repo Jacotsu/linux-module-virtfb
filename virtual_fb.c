@@ -43,7 +43,8 @@
 #include <linux/console.h>
 #include <linux/io.h>
 #include <linux/uaccess.h>
-#include <asm/mach-types.h>
+
+#define VM_RESERVED     0x00080000      /* Count as reserved_vm like IO */
 
 /*
  * Driver name
